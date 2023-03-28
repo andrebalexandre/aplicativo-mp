@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagamento</title>
+    <link rel="stylesheet" href="./pg_pagamento.css">
 <style>
-    
     body
     {
         width: 100%;
@@ -35,18 +35,6 @@
         display: flex;
         flex-direction: row;
     }
-      
-    .quadrado
-    {
-        width: 400px;
-        height: 90px;
-        background-color: #EF5867;
-        border-radius: 0px 0px 20% 20%;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        align-items: center;
-    }
 
     .barra
     {
@@ -61,24 +49,12 @@
     }
 
     
-    .seta
+    .barrinha
     {
-        margin-left: 50px;
-    }
+        margin-top: 20px;
+        margin-left: 310px;
 
-    .conta
-    {
-        margin-left: 19px;
-    }
 
-    .home
-    {
-        margin-left: 12px;
-    }
-
-    .nosavalie
-    {
-        margin-left: 12px;
     }
 
     .logo
@@ -98,41 +74,31 @@
         margin-top: 60px;
     }
 
-    .carrinho
-    {
-        margin-left: 25px;
-    }
-   
-    .pontinho
-    {
-        margin-left: 8px;
-    }
-
+    
     .margemfinal
     {
         height: 50px;
-    }
-
-    .escrita
-    {
-        font-size: 25px;
-        margin-left: 15px;
-        color: #EF5867;
+        background-color: antiquewhite;
     }
 
 </style>
 </head>
 <body>
-    <div class="div1">
-        <div class="quadrado">
-            <a href="pglogin1.html"> <img src="seta.png" width="20px" class="setinha"></a>
-            <!--<img src="conta.png" width="60px" class="conta">-->
-            <!--<img src="home.png" width="52px" class="home">-->
-            <!--<img src="nosavalie.png" width="55px" class="nosavalie">-->
-            <img src="carrinho.png" width="55px" class="carrinho">
-            <!--<img src="menu.png" width="45px" class="menuzinho">-->
-        </div>
-    </div>
+    <header id="header">
+        <a id="logo" href=""><img src="home.png" width="60px"></a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="/">Minha Conta</a></li>
+            <li><a href="/">Produtos</a></li>
+            <li><a href="/">Carrinho</a></li>
+            <li><a href="/">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+      <script src="./pg_pagamento.js"></script>
 
     <div class="div2">
         <div class="barra">
@@ -141,11 +107,8 @@
             <img src="titulo.png" width="180px" class="titulo">
         </div>
     </div>
+
     <div class="margemfinal"></div>
-    </div>
-    <div class="escrita">
-        <br> <br> 
-        <b> Efetue seu pagamento </b>
     </div>
 </body>
 </html>

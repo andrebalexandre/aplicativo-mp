@@ -30,8 +30,49 @@
             <img src="logo.png" width="120px" class="logo">
             <img src="titulo.png" width="180px" class="titulo">
         </div>
-
     </div>
+      <div class="div3">
+        <b>Efetue seu pagamento</b>
+      </div>
+      <div class="div4">
+        <b>Valor total do seu pedido: R$</b>
+      </div>
+
+      <div class="div5">
+        <b>Confirme o seu endereço: </b>
+        <br> <br>
+
+        <fieldset class="fild">
+          <legend class="legend"><b>Cep</b></legend>
+          <input maxlength="9" type="text" id="cep" onkeyup="ValidarCEP();">
+      </fieldset>
+      </div>
 
 </body>
+
+<script>
+  function ValidarCEP()
+  {
+      //acesse o site regex101.com
+      expressao = /[0-9]{5}-[0-9]{3}$/g; 
+      texto = cep.value;
+      if (texto.length==5)
+      {
+          cep.value = texto + "-";
+      }
+
+      resposta = expressao.test(texto);
+      if (resposta==true)
+       {
+          cep.classList.remove('errado');
+          cep.classList.add('certo');
+       }
+      if (resposta==false)
+       {
+          cep.classList.remove('certo');
+          cep.classList.add('errado');
+       }
+  }
+</script>
+
 </html>

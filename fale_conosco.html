@@ -9,6 +9,22 @@
     <link rel="stylesheet" href="fale_conosco.css">
 </head>
 <body>
+  <header id="header">
+    <a id="logo" href=""><img src="home.png" width="50px"></a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="/">Minha Conta</a></li>
+        <li><a href="/">Produtos</a></li>
+        <li><a href="/">Carrinho</a></li>
+        <li><a href="/fale_conosco.html">Fale conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script src="./fale_conosco.js"></script>
+
     <img class="logo" src="logo.png">
     <div class="escrita"><b>Sua Dúvida:</b></div>
     <input class="mensagem" type="text" id="mensagem"> 
@@ -16,6 +32,8 @@
     <button class="bt" onclick="Enviar();"><b>Enviar</b></button>
     <br> <br>
     <div class="resposta" id="resposta">  </div>
+
+
 </body>
 
 <script>
@@ -64,8 +82,10 @@
     //expressao=/[0-9]/g;
    // r=expressao.test(texto)
     if (texto !="") //&& r==false
+
     {
-        texto = "<a href='https://github.com/andrebalexandre/aplicativo-mp/blob/main/pg_pagamentos.html'> Suporte: </a> "  + texto
+
+      texto = "<a href='https://github.com/andrebalexandre/aplicativo-mp/blob/main/pg_pagamentos.html'> Suporte: </a> "  + texto
         mensagem.value=""
 
         message = new Paho.MQTT.Message(texto);

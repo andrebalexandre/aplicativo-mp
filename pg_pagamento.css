@@ -176,6 +176,33 @@ body
   justify-content: center;
   justify-self: center;
 }
+
+.div7
+{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dinheiro
+{
+  width: 100px;
+  height: 70px;
+
+}
+
+.cartao
+{
+  width: 100px;
+  height: 70px;
+
+}
+
+.pix
+{
+  width: 100px;
+  height: 70px;
+}
 .fild
 {
   width: 230px;

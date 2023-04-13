@@ -9,7 +9,7 @@
 </head>
 <body>
     <header id="header">
-        <a id="logo" href=""><img src="home.png" width="50px"></a>
+        <a id="seta" href=""><img src="seta.png" width="50px"></a>
         <nav id="nav">
           <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
             <span id="hamburger"></span>
@@ -66,8 +66,34 @@
 
             <fieldset>
                 <legend><b>CEP</b></legend>
-                    <input type="number" id="CEP" name="CEP">
+                <input maxlength="9" type="text" id="cep" onkeyup="ValidarCEP();">
             </fieldset>
+
+            <script>
+                function ValidarCEP()
+          {
+              //acesse o site regex101.com
+              expressao = /[0-9]{5}-[0-9]{3}$/g; 
+              texto = cep.value;
+              if (texto.length==5)
+              {
+                  cep.value = texto + "-";
+              }
+      
+              resposta = expressao.test(texto);
+              if (resposta==true)
+               {
+                  cep.classList.remove('errado');
+                  cep.classList.add('certo');
+               }
+              if (resposta==false)
+               {
+                  cep.classList.remove('certo');
+                  cep.classList.add('errado');
+               }
+          }
+      
+        </script>
 
             <fieldset>
                 <legend><b>Rua</b></legend>

@@ -182,6 +182,13 @@ body
         margin-top: 80px;
     }
     
+
+    .seta
+
+    {
+      width: 15px;
+      height: 10px;
+    }
     .home
     {
         margin-left: 12px;
@@ -199,3 +206,12 @@ body
     }
 
     
+.certo
+{
+  background-color: lightgreen;
+}
+
+.errado
+{
+  background-color: lightcoral;
+}

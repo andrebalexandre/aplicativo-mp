@@ -179,29 +179,46 @@ body
 
 .div7
 {
-  margin-top: 10px;
+  width: 100%;
+  height: 70px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
-}
-
-.dinheiro
-{
-  width: 100px;
-  height: 70px;
-
+  justify-content: center;
+  justify-items: center;
 }
 
 .cartao
 {
-  width: 100px;
-  height: 70px;
-
+  width: 40px;
+  height: 40px;
 }
 
 .pix
 {
-  width: 100px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
+}
+
+.bt1
+{
+  width: 70px;
+  background-color: rgb(228, 210, 187);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.bt2
+{
+  width: 70px;
+  background-color: rgb(228, 210, 187) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 20px;
 }
 .fild
 {
@@ -245,11 +262,11 @@ body
 }
 
 .certo
-    {
-        background-color: lightgreen;
-    }
+{
+  background-color: lightgreen;
+}
 
-    .errado
-    {
-        background-color: lightcoral;
-    }
+.errado
+{
+  background-color: lightcoral;
+}

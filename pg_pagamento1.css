@@ -221,16 +221,21 @@ body
   justify-items: center;
   margin-left: 20px;
 }
-.fild
-{
-  width: 230px;
-  height: 50px;
-  border-radius:10px;
-  border-color: black;
-  display: flex;
-  justify-content: center;
- justify-self: center;
-}
+
+fieldset
+    {
+      margin-top: 30px;
+        width: 200px;
+        font-size: 20px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10px;
+        position: relative;
+        height: 33px;
+        display: flex;
+        justify-content: center;
+        align-content: center;   
+    }
 
 .legend
 {
@@ -270,4 +275,14 @@ body
 .errado
 {
   background-color: lightcoral;
+}
+
+input{
+  border-style: none;
+  background-color: antiquewhite;
+  width: 90%;
+  height: 20px;
+  position: absolute;
+  left:5px;
+  top:0px;
 }
